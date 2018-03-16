@@ -10,6 +10,7 @@
 		09695051205A2D4600ACC9D8 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09695050205A2D4600ACC9D8 /* GoalCell.swift */; };
 		09695053205C671900ACC9D8 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09695052205C671900ACC9D8 /* GoalType.swift */; };
 		09695055205C6F9400ACC9D8 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09695054205C6F9400ACC9D8 /* CreateGoalVC.swift */; };
+		09695057205C716F00ACC9D8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09695056205C716F00ACC9D8 /* UIViewController.swift */; };
 		0991988420578F3100DDEB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991988320578F3100DDEB68 /* AppDelegate.swift */; };
 		0991988620578F3100DDEB68 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991988520578F3100DDEB68 /* GoalsVC.swift */; };
 		0991988920578F3100DDEB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0991988720578F3100DDEB68 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		09695050205A2D4600ACC9D8 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		09695052205C671900ACC9D8 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		09695054205C6F9400ACC9D8 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		09695056205C716F00ACC9D8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		0991988020578F3100DDEB68 /* Goal Posting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal Posting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0991988320578F3100DDEB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0991988520578F3100DDEB68 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		0991989B2057A5EB00DDEB68 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				09695056205C716F00ACC9D8 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09695057205C716F00ACC9D8 /* UIViewController.swift in Sources */,
 				09695051205A2D4600ACC9D8 /* GoalCell.swift in Sources */,
 				09695055205C6F9400ACC9D8 /* CreateGoalVC.swift in Sources */,
 				09695053205C671900ACC9D8 /* GoalType.swift in Sources */,
