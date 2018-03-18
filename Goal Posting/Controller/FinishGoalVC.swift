@@ -30,7 +30,7 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         createGoalBtn.bindToKeyboard()
-        self.hideKeyboardWhenTappedAround()
+       // self.hideKeyboardWhenTappedAround()
         pointsTextField.delegate = self
         
     }
@@ -91,6 +91,7 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
 
 }
 
+/*
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -102,4 +103,5 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+ */
 
