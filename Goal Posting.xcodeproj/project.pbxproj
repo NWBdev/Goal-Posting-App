@@ -13,6 +13,7 @@
 		09695057205C716F00ACC9D8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09695056205C716F00ACC9D8 /* UIViewController.swift */; };
 		096EA47B205DE3D9008D12AE /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA47A205DE3D9008D12AE /* UIViewExt.swift */; };
 		096EA47D205DE76A008D12AE /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA47C205DE76A008D12AE /* UIButtonExt.swift */; };
+		096EA47F205E00AA008D12AE /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA47E205E00AA008D12AE /* FinishGoalVC.swift */; };
 		0991988420578F3100DDEB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991988320578F3100DDEB68 /* AppDelegate.swift */; };
 		0991988620578F3100DDEB68 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991988520578F3100DDEB68 /* GoalsVC.swift */; };
 		0991988920578F3100DDEB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0991988720578F3100DDEB68 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		09695056205C716F00ACC9D8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		096EA47A205DE3D9008D12AE /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		096EA47C205DE76A008D12AE /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		096EA47E205E00AA008D12AE /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		0991988020578F3100DDEB68 /* Goal Posting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal Posting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0991988320578F3100DDEB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0991988520578F3100DDEB68 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				0991988520578F3100DDEB68 /* GoalsVC.swift */,
 				09695054205C6F9400ACC9D8 /* CreateGoalVC.swift */,
+				096EA47E205E00AA008D12AE /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				0991988620578F3100DDEB68 /* GoalsVC.swift in Sources */,
 				0991988420578F3100DDEB68 /* AppDelegate.swift in Sources */,
 				096EA47D205DE76A008D12AE /* UIButtonExt.swift in Sources */,
+				096EA47F205E00AA008D12AE /* FinishGoalVC.swift in Sources */,
 				0991988C20578F3100DDEB68 /* Goal_Posting.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
