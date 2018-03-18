@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import CoreData
+
+// delegate to get manage context
+let appDelegate = UIApplication.shared.delegate as?  AppDelegate
 
 class FinishGoalVC: UIViewController, UITextFieldDelegate {
 
@@ -25,9 +29,9 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        createGoalBtn?.bindToKeyboard()
+        createGoalBtn.bindToKeyboard()
         self.hideKeyboardWhenTappedAround()
-        pointsTextField?.delegate = self
+        pointsTextField.delegate = self
         
     }
 
@@ -39,9 +43,40 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
 
     @IBAction func createGoalBtnPressed(_ sender: Any) {
         // Pass data into Core Data View Model
-        
+        if pointsTextField.text != "" {
+            self.save { (complete) in
+                if complete {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     
+    
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismissDetail()
+    }
+    
+    
+    func save(competion: (_ finished: Bool)-> ()) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let goal = Goal(context: managedContext)
+        
+        goal.goalDescription = goalDescription
+        goal.goalType = goalType.rawValue
+        goal.goalCompletionValue = Int32(pointsTextField.text!)!
+        goal.goalProgress = Int32(0)
+        
+        
+        do {
+            try managedContext.save()
+            print("Success in saved data")
+            competion(true)
+        } catch {
+            debugPrint("Could not save \(error.localizedDescription)")
+            competion(false)
+        }
+    }
     
     
     /*

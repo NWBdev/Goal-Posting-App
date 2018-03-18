@@ -367,6 +367,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-6V-ujr">
                                         <rect key="frame" x="15" y="31" width="14" height="25"/>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="NSE-7c-fm0" eventType="touchUpInside" id="SUl-Gp-XUh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -414,6 +417,9 @@
                                         <state key="normal" title="Create Goal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createGoalBtnPressed:" destination="NSE-7c-fm0" eventType="touchUpInside" id="9aO-DO-v3p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -439,6 +445,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CQP-Xf-dHx"/>
                     </view>
+                    <connections>
+                        <outlet property="createGoalBtn" destination="eYX-04-ywy" id="m8K-8l-THJ"/>
+                        <outlet property="pointsTextField" destination="XiC-wX-JEz" id="7BK-7B-zUg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rt-TN-gA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
