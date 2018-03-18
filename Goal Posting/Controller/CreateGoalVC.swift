@@ -16,12 +16,15 @@ class CreateGoalVC: UIViewController {
     @IBOutlet weak var longTermBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
-    
+    //Variables
+    var goalType: GoalType = .shortTerm
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        nextBtn.bindToKeyboard()
+        shortTermBtn.setSelectedColor()
+        longTermBtn.setDeSelectedColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +38,14 @@ class CreateGoalVC: UIViewController {
     }
     
     @IBAction func shortTermBtnWasPressed(_ sender: Any) {
+        goalType = .shortTerm
+        shortTermBtn.setSelectedColor()
+        longTermBtn.setDeSelectedColor()
     }
     @IBAction func longTermBtnWasPressed(_ sender: Any) {
+        goalType = .longTerm
+        longTermBtn.setSelectedColor()
+        shortTermBtn.setDeSelectedColor()
     }
     @IBAction func backBtnWasPressed(_ sender: Any) {
         dismissDetail()
